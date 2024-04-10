@@ -1,0 +1,12 @@
+O programa pode ser setorizado em quatro partes, a primeira
+é a visão geral do programa funcionando como um todo,
+a segunda é o controle da nave, a terceira é o cenário e
+a quarta é o menu de jogar de novo.  
+
+1- fluxo principal do programa
+2- nave
+3- cenário
+4- menu de jogar de novo
+
+
+

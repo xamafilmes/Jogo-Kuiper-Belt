@@ -1,0 +1,4 @@
+O diagrama de sequência explicita graficamente o fluxo 
+principal do programa como as mensagens (funções) chamadas
+por cada objeto e como os diversos objetos interagem para
+formar o jogo. 

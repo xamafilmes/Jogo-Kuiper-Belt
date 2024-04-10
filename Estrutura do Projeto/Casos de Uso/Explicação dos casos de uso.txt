@@ -1,0 +1,8 @@
+1- O jogador terá acesso a mover a nave na horizontal e 
+a atirar um tipo de míssil da nave, portanto, caso de uso
+"jogar"
+
+2- escolher por jogar de novo.
+
+portanto temos 2 casos do uso. 
+
