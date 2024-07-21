@@ -1,4 +1,40 @@
-O diagrama de sequ�ncia explicita graficamente o fluxo 
-principal do programa como as mensagens (fun��es) chamadas
+O diagrama de sequência explicita graficamente o fluxo 
+principal do programa como as mensagens (funções) chamadas
 por cada objeto e como os diversos objetos interagem para
 formar o jogo. 
+
+Jogador: Controla a nave.
+Nave: Movimenta-se e dispara tiros e misseis.
+Meteoros: Aparecem na parte superior da tela.
+Tiro: Disparado com o botão esquerdo.
+Míssil: Disparado com o botão direito.
+Vida: Representa a saúde da nave.
+
+    Diagrama de Sequência
+
+  Movimento da Nave
+Jogador move o mouse.
+Nave segue a posição do mouse na parte inferior da tela.
+
+  Disparo de Tiro
+Jogador clica com o botão esquerdo do mouse.
+Nave dispara um Tiro.
+
+  Disparo de Míssil
+Jogador clica com o botão direito do mouse.
+Nave dispara um Míssil (se estiver disponível).
+
+  Geração de Meteoros
+Meteoros são gerados aleatoriamente na parte superior da tela.
+Meteoros giram e se movem para baixo em direção à parte inferior da tela.
+
+  Coleta de Adicional de Míssil
+Quando um meteoro médio ou grande é destruído, há uma chance de gerar um adicional de míssil.
+Nave coleta o adicional de míssil, aumentando o número de mísseis disponíveis.
+
+  Coleta de Adicional de Vida
+Quando um meteoro médio ou grande é destruído, há uma chance de gerar um adicional de vida, meteoros grandes tem maior chance de gerar vida.
+Nave coleta o adicional de vida, aumentando a vida em um, o máximo de vida é seis.
+
+  Colisão com Meteoro
+Se a Nave colidir com um meteoro, a Nave perde uma vida.
