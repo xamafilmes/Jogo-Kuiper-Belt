@@ -8,8 +8,6 @@
 
 #include <QDebug>
 
-#include "Placar.h"
-
 #include "Jogar.h"
 extern Jogar *jogo; //foi usado para adicionar o placar sem usar signals e slots porem não é o ideal, para adicionar
 // a vida, a implementação foi feita de maneira correta
