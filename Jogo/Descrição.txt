@@ -16,9 +16,11 @@ Agora:
 
 Depois:
 
+* Colocar vidas diferentes para cada asteroide / muito importante
+
 * Colocar misseis e vida dropados de asteroides /importante
 
-* Colocar a contagem dos misseis diferentes (canto inferior da tela)  /importante
+* Colocar a contagem dos misseis diferentes  /importante
 
 * Colocar uma tela inicial "Jogar" /importante
 
