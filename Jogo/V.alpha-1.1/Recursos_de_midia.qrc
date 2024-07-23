@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/sons">
+        <file>Asteroide_Explosao.wav</file>
+        <file>Musica_de_Fundo.mp3</file>
+        <file>Missil_1.mp3</file>
+        <file>Missil_2.mp3</file>
+        <file>Missil_3.mp3</file>
+    </qresource>
+</RCC>

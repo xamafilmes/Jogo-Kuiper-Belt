@@ -1,0 +1,27 @@
+A versão atual é sempre a que tiver maior número
+
+Alpha < Beta 
+
+1.0 < 1.1       etc.
+
+Atual versão: V.alpha-1.1
+
+// principais mudanças : sons, vida diminue, asteroides desaparecem ao dar dano
+
+Próximos Passos:
+
+Agora:
+
+* Colocar as imagens / muito importante
+
+Depois:
+
+* Colocar misseis e vida dropados de asteroides /importante
+
+* Colocar a contagem dos misseis diferentes (canto inferior da tela)  /importante
+
+* Colocar uma tela inicial "Jogar" /importante
+
+* Colocar uma tela de morte "Jogar novamente" /importante
+
+* Trocar o teclado para o Mouse /menos importante
