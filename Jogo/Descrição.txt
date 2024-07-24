@@ -1,5 +1,7 @@
 A versão atual é sempre a que tiver maior número
 
+O jogo foi feto baseado no QtCreator 5.12.12
+
 Alpha < Beta 
 
 1.0 < 1.1       etc.
