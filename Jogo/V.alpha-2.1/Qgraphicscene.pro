@@ -11,6 +11,7 @@ CONFIG += c++11
 
 SOURCES += \
     Asteroide.cpp\
+    Itens.cpp \
     Jogar.cpp \
     Missil.cpp \
     Nave.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
 
 HEADERS += \
     Asteroide.h \
+    Itens.h \
     Jogar.h \
     Missil.h \
     Nave.h

@@ -3,8 +3,17 @@
 #include <QFont>
 #include <QGraphicsTextItem>
 
+#define LARGURA_TELA_X 800    // Dimensões da tela
+#define ALTURA_TELA_Y 600     //
+
+#define FOCO_DA_TELA_X 0      // Foco da tela
+#define FOCO_DA_TELA_Y 0      //
+
+#define FONTE_TEXTO_VIDA   18 //fonte
+#define FONTE_TEXTO_PLACAR 18 //
 
 #define ESPACO_PLACAR_E_VIDA 5 // numero em pixeis
+
 
 Jogar::Jogar()
 {
@@ -19,8 +28,8 @@ Jogar::Jogar()
     foco_de_jogo->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff); // tira as merdas das barras inferiores
     foco_de_jogo->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff); // tira as merdas das barras laterais
 
-    foco_de_jogo->setFixedSize(800,600); // coloca o foco fixo em uma janela de 800,600
-    cena_de_jogo->setSceneRect(0,0,800,600); // seta a cena para comçar no 0,0 do foco e ter o mesmo tamanho que o foco
+    foco_de_jogo->setFixedSize(LARGURA_TELA_X,ALTURA_TELA_Y); // coloca o foco fixo em uma janela de 800,600
+    cena_de_jogo->setSceneRect(FOCO_DA_TELA_X,FOCO_DA_TELA_Y,LARGURA_TELA_X,ALTURA_TELA_Y); // seta a cena para comçar no 0,0 do foco e ter o mesmo tamanho que o foco
 
     // colocar o background como sendo uma imagem
     // precisa adicionar "QImage" header
@@ -32,7 +41,7 @@ Jogar::Jogar()
     // criar o objeto do placar
     placar_obj = new QGraphicsTextItem;
     placar_obj->setDefaultTextColor("Blue");
-    placar_obj->setFont(QFont("Arial",18));
+    placar_obj->setFont(QFont("Arial",FONTE_TEXTO_PLACAR));
     placar_obj->setPlainText("Pontuação: "+ QString::number(pontos));
 
     //Coloca o objeto da pontuação na cena
@@ -41,8 +50,8 @@ Jogar::Jogar()
     //criar o objeto da vida
     vida_obj = new QGraphicsTextItem;
     vida_obj->setDefaultTextColor("Red");
-    vida_obj->setFont(QFont("Arial",18));
-    vida_obj->setPlainText("Vida: "+ QString::number(6));
+    vida_obj->setFont(QFont("Arial",FONTE_TEXTO_VIDA ));
+    vida_obj->setPlainText("Vida: "+ QString::number(6)); // Vida sempre inicia com 6
     vida_obj->setPos(0,placar_obj->pos().y()+ placar_obj->font().pointSize()+ ESPACO_PLACAR_E_VIDA);
 
     //Coloca o objeto da vida na cena
@@ -114,6 +123,11 @@ void Jogar::tocar_denovo()
        musica_de_fundo->play();
        qDebug()<< "musica voltoi";
     }
+
+}
+
+void Jogar::criar_itens_para_nave()
+{
 
 }
 

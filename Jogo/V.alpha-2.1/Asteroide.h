@@ -28,6 +28,7 @@ class Asteroide: public QObject, public QGraphicsPixmapItem
     Q_OBJECT
 public:
     Asteroide();
+    ~Asteroide();
     void diminuir_vida_asteroide(int missil);
     int  ver_vida_asteroide();
     int  dar_dano_asteroide();
@@ -41,6 +42,8 @@ private:
     int dano_asteroide;
     tipo_asteroide tamanho_asteroide;
     QMediaPlayer * som_explosao_asteroide;
+signals:
+    int criar_item_de_asteroide(int nr_randomico);
 };
 
 
