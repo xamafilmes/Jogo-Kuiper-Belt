@@ -73,18 +73,31 @@ void Missil::mover()
                 //ou seja
                 // pnt = 2 + 2*( (int) tipo_asteroide)
 
-                int pnt = 2 + 2*(int)((Asteroide *)itens_colididos[i])->obter_tamanho_asteroide();
-                qDebug() << "plcar +"<< pnt<<"?";
-                jogo->adicionar_placar(pnt);
+                Asteroide * asteroide = (Asteroide *)(itens_colididos[i]);
 
-                //asteroide explode
-                ((Asteroide *)itens_colididos[i])->explosao();
+                //diminuir a vida do asteroide
 
-                //remove os dois
-                scene()->removeItem(itens_colididos[i]);
-                scene()->removeItem(this);
-                delete itens_colididos[i];
-                delete this;
+                asteroide->diminuir_vida_asteroide((2+ (int)(this->missil_t)));
+
+                if (asteroide->ver_vida_asteroide()<=0)
+                {
+                    int pnt = 2 + 2*(int)(asteroide)->obter_tamanho_asteroide();
+                    qDebug() << "plcar +"<< pnt<<"?";
+                    jogo->adicionar_placar(pnt);
+
+                    //asteroide explode
+                    ((Asteroide *)itens_colididos[i])->explosao();
+
+                    //remove o missil, o asteroide foi deletado pela 'explosao()'
+                    scene()->removeItem(this);
+                    delete this;
+                }
+                else
+                {
+                    scene()->removeItem(this);
+                    delete this;
+                }
+
             }
         }
     }

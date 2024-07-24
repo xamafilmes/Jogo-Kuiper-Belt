@@ -47,9 +47,23 @@ Asteroide::Asteroide()
 
 }
 
+// quando o asteroide medio ou grande é destruido uma mensagem é enviada para o 'Jogo' que então cria o item
+// e o adiciona à nave
+
+Asteroide::~Asteroide()
+{
+    tipo_asteroide tipo = obter_tamanho_asteroide();
+    if (tipo > 0)
+    {
+        emit criar_item_de_asteroide((int)tipo);
+    }
+}
+
 void Asteroide::explosao()
 {
     som_explosao_asteroide->play();
+    scene()->removeItem(this);
+    delete this;
 }
 
 void Asteroide::diminuir_vida_asteroide(int missil)
@@ -99,12 +113,9 @@ void Asteroide::mover()
                 qDebug() << "Dano -"<< dn<<"?";
                 ((Nave *)(itens_colididos[i]))->decrementar_vida(dn);
 
-                //asteroide explode
+                //asteroide explode, é retirado da cena e excluido
                 explosao();
 
-                //tira o asteroide da cena e paga ele depois
-                scene()->removeItem(this);
-                delete this;
                 return ;
                 //morte do jogador
 

@@ -30,19 +30,23 @@ public slots:
         void imprimir_vida();
         // musica de fundo
         void tocar_denovo();
+        // criar itens para a nave        // <------------------
+        void criar_itens_para_nave();     // <------------------
     private:
         //parte gráfica
         QGraphicsScene *cena_de_jogo;
         QGraphicsView *foco_de_jogo;
-        //Itens na tela
-        Nave *nave;
         // temporização de inimigos
         QTimer * tempo_inimigo;
+        //Itens na tela
+        Nave *nave;
         //placar
         int pontos;
         QGraphicsTextItem * placar_obj;
         //display da vida
         QGraphicsTextItem * vida_obj;
+        //display das mensagens de itens                // <------------------
+        QGraphicsTextItem * itens_obj;                  // <------------------
         //musica de fundo
         QMediaPlayer *musica_de_fundo = new QMediaPlayer;
 };

@@ -1,33 +1,38 @@
-A versão atual é sempre a que tiver maior número
-
 O jogo foi feto baseado no QtCreator 5.12.12
+
+
+A versão atual do jogo é sempre a que tiver maior número
 
 Alpha < Beta 
 
 1.0 < 1.1       etc.
 
-Atual versão: V.alpha-2.0
+
+Atual versão: V.alpha-2.1
 
 1.0 -> 1.1 // principais mudanças : sons, vida diminue, asteroides desaparecem ao dar dano
 
 1.1 -> 2.0 // colocada algumas imagens (não arrumado o fundo)
 
+2.0 -> 2.1 // colocada vidas diferentes para cada asteroide, inicio da classe de itens (vidas e misseis para nave), modularidade com definiçoes de cabeçalho
+
+
 Próximos Passos:
 
 Agora:
 
-* Colocar vidas diferentes para cada asteroide / muito importante
+* Colocar misseis e vida dropados de asteroides /muito importante
 
 Depois:
 
-* Colocar misseis e vida dropados de asteroides /importante
-
-* Colocar a contagem dos misseis diferentes  /importante
+* Colocar a contagem dos misseis diferentes /muito importante
 
 * Colocar uma tela inicial "Jogar" /importante
 
 * Colocar uma tela de morte "Jogar novamente" /importante
 
-* Arrumar as imagens / menos importante
+* Arrumar as imagens /menos importante
 
 * Trocar o teclado para o Mouse /menos importante
+
+* Colocar as imagens das vidas (corações) /não importante
