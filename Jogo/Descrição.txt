@@ -4,19 +4,19 @@ Alpha < Beta
 
 1.0 < 1.1       etc.
 
-Atual versão: V.alpha-1.1
+Atual versão: V.alpha-2.0
 
-// principais mudanças : sons, vida diminue, asteroides desaparecem ao dar dano
+1.0 -> 1.1 // principais mudanças : sons, vida diminue, asteroides desaparecem ao dar dano
+
+1.1 -> 2.0 // colocada algumas imagens (não arrumado o fundo)
 
 Próximos Passos:
 
 Agora:
 
-* Colocar as imagens / muito importante
+* Colocar vidas diferentes para cada asteroide / muito importante
 
 Depois:
-
-* Colocar vidas diferentes para cada asteroide / muito importante
 
 * Colocar misseis e vida dropados de asteroides /importante
 
@@ -25,5 +25,7 @@ Depois:
 * Colocar uma tela inicial "Jogar" /importante
 
 * Colocar uma tela de morte "Jogar novamente" /importante
+
+* Arrumar as imagens / menos importante
 
 * Trocar o teclado para o Mouse /menos importante

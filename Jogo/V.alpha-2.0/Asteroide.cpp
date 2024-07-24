@@ -1,4 +1,4 @@
-﻿#include "Asteroide.h"
+#include "Asteroide.h"
 
 #define TAMANHO_X_TELA 800
 
@@ -17,20 +17,20 @@ Asteroide::Asteroide()
     case asteroide_normal:
         vida_asteroide = 2;
         dano_asteroide = 2;
-        setRect(0,0,40,40);
-        setTransformOriginPoint(20,20);
+        setPixmap(QPixmap(":/icones/Meteoro1.png"));
+        setTransformOriginPoint(boundingRect().width()/2,boundingRect().height()/2);
     break;
     case asteroide_medio:
         vida_asteroide = 4;
         dano_asteroide = 4;
-        setRect(0,0,70,70);
-        setTransformOriginPoint(25,25);
+        setPixmap(QPixmap(":/icones/Meteoro2.png"));
+        setTransformOriginPoint(boundingRect().width()/2,boundingRect().height()/2);
     break;
     case asteroide_grande:
         vida_asteroide = 6;
         dano_asteroide = 6;
-        setRect(0,0,100,100);
-        setTransformOriginPoint(50,50);
+        setPixmap(QPixmap(":/icones/Meteoro3.png"));
+        setTransformOriginPoint(boundingRect().width()/2,boundingRect().height()/2);
     break;
     }
 
@@ -119,7 +119,7 @@ void Asteroide::mover()
             }
         }
 
-    if(y() > scene()->height()+rect().height()*4)
+    if(y() > scene()->height()+boundingRect().height()*4)
     {
         delete this;
         qDebug() << "Asteroide Fora de tela destruido";
