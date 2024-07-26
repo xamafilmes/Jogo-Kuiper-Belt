@@ -7,14 +7,16 @@ Alpha < Beta
 
 1.0 < 1.1       etc.
 
+Atual versão: V.alpha-2.2
 
-Atual versão: V.alpha-2.1
 
 1.0 -> 1.1 // principais mudanças : sons, vida diminue, asteroides desaparecem ao dar dano
 
 1.1 -> 2.0 // colocada algumas imagens (não arrumado o fundo)
 
 2.0 -> 2.1 // colocada vidas diferentes para cada asteroide, inicio da classe de itens (vidas e misseis para nave), modularidade com definiçoes de cabeçalho
+
+2.1 -> 2.2 // colocada vida adicional randomica ao destruir asteroides médios e grandes, progredindo no display de itens 
 
 
 Próximos Passos:
