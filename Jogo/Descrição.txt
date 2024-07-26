@@ -23,7 +23,7 @@ Próximos Passos:
 
 Agora:
 
-* Colocar misseis e vida dropados de asteroides /muito importante
+* Colocar texto dos itens adquiridos /importante
 
 Depois:
 
