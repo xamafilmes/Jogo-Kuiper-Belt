@@ -7,7 +7,7 @@ Alpha < Beta
 
 1.0 < 1.1       etc.
 
-Atual versão: V.alpha-2.2
+Atual versão: V.alpha-2.3
 
 
 1.0 -> 1.1 // principais mudanças : sons, vida diminue, asteroides desaparecem ao dar dano
@@ -18,23 +18,25 @@ Atual versão: V.alpha-2.2
 
 2.1 -> 2.2 // colocada vida adicional randomica ao destruir asteroides médios e grandes, progredindo no display de itens 
 
+2.2 -> 2.3 // colocado texto dos itens adquiridos 
+
 
 Próximos Passos:
 
 Agora:
 
-* Colocar texto dos itens adquiridos /importante
+* Colocar a contagem dos misseis diferentes na tela /muito importante
 
 Depois:
 
-* Colocar a contagem dos misseis diferentes /muito importante
+* Fazer com que os diferentes tipos de misseis possam ser trocados /muito importante
 
 * Colocar uma tela inicial "Jogar" /importante
 
 * Colocar uma tela de morte "Jogar novamente" /importante
 
-* Arrumar as imagens /menos importante
+* Trocar o teclado para o Mouse / importante
 
-* Trocar o teclado para o Mouse /menos importante
+* Arrumar as imagens / importante
 
 * Colocar as imagens das vidas (corações) /não importante
