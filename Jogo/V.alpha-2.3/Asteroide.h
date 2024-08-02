@@ -43,6 +43,7 @@ private:
     int dano_asteroide;
     tipo_asteroide tamanho_asteroide;
     QMediaPlayer * som_explosao_asteroide;
+    QTimer rotacao_as_e_translacao;
 signals:
     int criar_item_de_asteroide(int nr_randomico);
 };

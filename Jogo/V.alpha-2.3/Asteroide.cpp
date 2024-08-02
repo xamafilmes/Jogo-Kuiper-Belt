@@ -42,7 +42,7 @@ Asteroide::Asteroide()
 
     setPos(nr_randomico,0);
 
-    QTimer * rotacao_as_e_translacao = new QTimer();
+    rotacao_as_e_translacao = new QTimer();
 
     connect(rotacao_as_e_translacao, SIGNAL(timeout()),this, SLOT(mover()));
     connect(rotacao_as_e_translacao, SIGNAL(timeout()),this, SLOT(girar()));
