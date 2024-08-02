@@ -4,7 +4,7 @@
 #include <QGraphicsPixmapItem>
 #include <QTimer>
 #include <QGraphicsScene>
-#include <QMediaPlayer>
+//#include <QMediaPlayer> //retirado devido a necessidade
 
 #include <QDebug>
 
@@ -35,7 +35,7 @@ public slots:
     void mover();
 private:
     tipo_missil missil_t;
-    QMediaPlayer * som_missil;
+    //QMediaPlayer * som_missil; //retirado devido a necessidade
 };
 
 #endif // MÍSSIL_H

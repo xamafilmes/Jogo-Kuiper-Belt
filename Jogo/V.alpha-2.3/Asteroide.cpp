@@ -37,8 +37,8 @@ Asteroide::Asteroide()
     break;
     }
 
-    som_explosao_asteroide = new QMediaPlayer;
-    som_explosao_asteroide->setMedia(QUrl("qrc:/sons/Asteroide_Explosao.wav"));
+    //som_explosao_asteroide = new QMediaPlayer; //retirado devido a necessidade
+    //som_explosao_asteroide->setMedia(QUrl("qrc:/sons/Asteroide_Explosao.wav"));  //retirado devido a necessidade
 
     setPos(nr_randomico,0);
 
@@ -53,7 +53,7 @@ Asteroide::Asteroide()
 
 void Asteroide::explosao()
 {
-    som_explosao_asteroide->play();
+    //som_explosao_asteroide->play(); //retirado devido a necessidade
     scene()->removeItem(this);
     delete this;
 }

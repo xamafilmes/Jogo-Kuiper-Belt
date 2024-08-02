@@ -101,11 +101,11 @@ Jogar::Jogar()
     tempo_asteroide->start(2000);
 
     //colocar son de backgraund
-    musica_de_fundo->setMedia(QUrl("qrc:/sons/Musica_de_Fundo.mp3"));
-    musica_de_fundo->play();
+    //musica_de_fundo->setMedia(QUrl("qrc:/sons/Musica_de_Fundo.mp3"));   //retirado devido a necessidade
+    //musica_de_fundo->play(); //retirado devido a necessidade
 
     //faz ela tocar de novo com o auxilio do sinal de mudança de estado do player de musica
-    connect(musica_de_fundo, SIGNAL(stateChanged(QMediaPlayer::State)),this,SLOT(tocar_denovo()));
+    //connect(musica_de_fundo, SIGNAL(stateChanged(QMediaPlayer::State)),this,SLOT(tocar_denovo())); //retirado devido a necessidade
 }
 
 
@@ -178,14 +178,14 @@ void Jogar::imprimir_vida()
     vida_texto_obj->setPlainText("Vida: "+ QString::number(vida));
 }
 
-void Jogar::tocar_denovo()
+/*void Jogar::tocar_denovo()
 {
     if(musica_de_fundo->state() == QMediaPlayer::StoppedState )
     {
        musica_de_fundo->play();
        qDebug()<< "musica voltoi";
     }
-}
+}*/ //retirado devido a necessidade
 
 void Jogar::criar_itens_para_nave(int semente_criacao_asteroide)
 {

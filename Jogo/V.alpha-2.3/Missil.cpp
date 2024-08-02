@@ -24,20 +24,20 @@ Missil::Missil()
     case missil_normal:
         // Desenha o Tiro normal
         setPixmap(QPixmap(":/icones/Tiro.png"));
-        som_missil->setMedia(QUrl("qrc:/sons/Missil_1.mp3"));
-        som_missil->play();
+        //som_missil->setMedia(QUrl("qrc:/sons/Missil_1.mp3")); //retirado devido a necessidade
+        //som_missil->play(); //retirado devido a necessidade
         break;
     case missil_medio:
         // Desenha o Missil
         setPixmap(QPixmap(":/icones/Missil.png"));
-        som_missil->setMedia(QUrl("qrc:/sons/Missil_2.mp3"));
-        som_missil->play();
+        //som_missil->setMedia(QUrl("qrc:/sons/Missil_2.mp3"));  //retirado devido a necessidade
+        //som_missil->play();  //retirado devido a necessidade
         break;
     case missil_grande:
         // Desenha o Missil
         setPixmap(QPixmap(":/icones/Missil.png"));
-        som_missil->setMedia(QUrl("qrc:/sons/Missil_3.mp3"));
-        som_missil->play();
+        //som_missil->setMedia(QUrl("qrc:/sons/Missil_3.mp3"));   //retirado devido a necessidade
+        //som_missil->play();   //retirado devido a necessidade
         break;
     }
 }

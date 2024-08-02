@@ -11,7 +11,7 @@
 #include <QDebug>
 #include <QGraphicsScene>
 
-#include <QMediaPlayer>
+//#include <QMediaPlayer> //retirado devido a necessidade
 
 #include <QImage>
 
@@ -30,7 +30,7 @@ public slots:
         //vida da nave/jogador
         void imprimir_vida();
         // musica de fundo
-        void tocar_denovo();
+        //void tocar_denovo(); //retirado devido a necessidade
         // criar itens para a nave
         void criar_itens_para_nave(int asteroide_tamanho);;
         // tira o texto do item da tela
@@ -60,7 +60,7 @@ public slots:
         // temporizador para tirar o texto da tela
         QTimer * tempo_texto_obg;
         //musica de fundo
-        QMediaPlayer *musica_de_fundo = new QMediaPlayer;
+        //QMediaPlayer *musica_de_fundo = new QMediaPlayer; //retirado devido a necessidade
 };
 
 #endif // JOGAR_H

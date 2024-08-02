@@ -3,7 +3,7 @@
 
 #include <QGraphicsScene>
 #include <QGraphicsPixmapItem>
-#include <QMediaPlayer>
+//#include <QMediaPlayer> //retirado devido a necessidade
 
 #include <QTimer>
 #include <QDebug>
@@ -42,7 +42,7 @@ private:
     int vida_asteroide;
     int dano_asteroide;
     tipo_asteroide tamanho_asteroide;
-    QMediaPlayer * som_explosao_asteroide;
+    //QMediaPlayer * som_explosao_asteroide; //retirado devido a necessidade
     QTimer rotacao_as_e_translacao;
 signals:
     int criar_item_de_asteroide(int nr_randomico);
