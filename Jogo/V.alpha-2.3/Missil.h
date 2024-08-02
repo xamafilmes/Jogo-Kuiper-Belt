@@ -36,6 +36,7 @@ public slots:
 private:
     tipo_missil missil_t;
     QMediaPlayer * som_missil;
+    QTimer temporizador;
 };
 
 #endif // MÍSSIL_H

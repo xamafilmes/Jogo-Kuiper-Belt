@@ -4,7 +4,7 @@
 Missil::Missil()
 {
     //temporizador que vai de um número a zero e faz o que tiver que fazer
-    QTimer * temporizador = new QTimer();
+    temporizador = QTimer();
 
     // estrutura principal do slot criado 'mover()'
     connect(temporizador, SIGNAL(timeout()), this,SLOT(mover()));
