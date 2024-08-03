@@ -23,7 +23,7 @@ signals:
 
 private:
     int vida_nave;
-    Itens * numero_de_misseis;
+    Itens numero_de_misseis;
 };
 
 #endif // NAVE_H

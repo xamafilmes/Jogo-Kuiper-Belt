@@ -4,10 +4,9 @@
 
 #include "Missil.h"
 
-Nave::Nave()
+Nave::Nave(): numero_de_misseis(0) // construtor dos itens 'numero de misseis'
 {
     vida_nave = 6;
-    numero_de_misseis = new Itens(0);
 }
 
 
@@ -74,6 +73,6 @@ int Nave::ver_vida_nave()
 
 void Nave::adicionar_itens(Itens item_ad)
 {
-  incrementar_vida(numero_de_misseis->adicionar_item_a_nave(item_ad));
-  qDebug()<<"Misseis Médios: "<< numero_de_misseis->ver_numero_misseis()[0]<< "Misseis Grandes: "<< numero_de_misseis->ver_numero_misseis()[1];
+  incrementar_vida(numero_de_misseis.adicionar_item_a_nave(item_ad));
+  qDebug()<<"Misseis Médios: "<< numero_de_misseis.ver_numero_misseis()[0]<< "Misseis Grandes: "<< numero_de_misseis.ver_numero_misseis()[1];
 }

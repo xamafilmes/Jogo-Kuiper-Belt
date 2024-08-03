@@ -4,11 +4,11 @@
 Missil::Missil()
 {
     //temporizador que vai de um número a zero e faz o que tiver que fazer
-    temporizador = QTimer();
+    //temporizador = new QTimer(); //retirado para não causar problemas de vazamaento de memória pela burrice dos programadores
 
     // estrutura principal do slot criado 'mover()'
-    connect(temporizador, SIGNAL(timeout()), this,SLOT(mover()));
-    temporizador->start(50);
+    connect(&temporizador, SIGNAL(timeout()), this,SLOT(mover()));
+    temporizador.start(50);
 
     // colocar o missil na frente da nave
     //*************Foi feito na implementação da Nave 'KeyPressEvent()'**************//
@@ -17,7 +17,7 @@ Missil::Missil()
     missil_t = missil_normal;
 
     //criar um media de som
-    som_missil = new QMediaPlayer;
+    //som_missil = new QMediaPlayer; //retirado devido a necessidade
 
     //coloca o som do missil para tocar
     switch (missil_t) {
