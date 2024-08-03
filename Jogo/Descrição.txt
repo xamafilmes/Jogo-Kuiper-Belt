@@ -18,7 +18,7 @@ Atual versão: V.alpha-2.3
 
 2.1 -> 2.2 // colocada vida adicional randomica ao destruir asteroides médios e grandes, progredindo no display de itens 
 
-2.2 -> 2.3 // colocado texto dos itens adquiridos e vazamento de memória no asteroide devido ao timer corrigido
+2.2 -> 2.3 // colocado texto dos itens adquiridos e vazamento de memória no asteroide e no missil devido ao timer corrigido
 
 
 Próximos Passos:
