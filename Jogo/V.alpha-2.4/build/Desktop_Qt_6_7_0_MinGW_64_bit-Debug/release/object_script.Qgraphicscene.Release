@@ -1,0 +1,11 @@
+release/Asteroide.o
+release/Itens.o
+release/Jogar.o
+release/Missil.o
+release/Nave.o
+release/main.o
+release/qrc_Recursos_de_midia.o
+release/moc_Asteroide.o
+release/moc_Jogar.o
+release/moc_Missil.o
+release/moc_Nave.o

@@ -20,6 +20,8 @@ Atual versão: V.alpha-2.3
 
 2.2 -> 2.3 // colocado texto dos itens adquiridos e vazamento de memória no asteroide e no missil devido ao timer corrigido
 
+2.3 -> 2.4 // ajustada a imagem de fundo, removido os sons, adicionada a função de lançar missil medio e grande com teclas X e Z
+
 
 Próximos Passos:
 
@@ -29,7 +31,6 @@ Agora:
 
 Depois:
 
-* Fazer com que os diferentes tipos de misseis possam ser trocados /muito importante
 
 * Colocar uma tela inicial "Jogar" /importante
 
@@ -37,6 +38,6 @@ Depois:
 
 * Trocar o teclado para o Mouse / importante
 
-* Arrumar as imagens / importante
+* Arrumar as imagens / importante (não sei se tem que arrumar mais alguma imagem)
 
 * Colocar as imagens das vidas (corações) /não importante
