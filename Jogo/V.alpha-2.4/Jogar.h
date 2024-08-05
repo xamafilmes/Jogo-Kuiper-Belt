@@ -3,6 +3,7 @@
 
 #include "Nave.h"
 #include "Asteroide.h"
+#include "misseis_placar.h"
 
 #include <QApplication>
 #include <QGraphicsScene>
@@ -35,6 +36,10 @@ public slots:
         void criar_itens_para_nave(int asteroide_tamanho);;
         // tira o texto do item da tela
         void retira_texto_item();
+        // missil medio
+        void missil_medio_placar_decrementar();
+        // missil grande
+        void missil_grande_placar_decrementar();
     private:
         // parte gráfica
         QGraphicsScene *cena_de_jogo;
@@ -45,10 +50,8 @@ public slots:
         Nave *nave;
         // placar
         int pontos;
-        // imagem estática da contagem de misseis medios na tela          // <---- fazer
-        QGraphicsPixmapItem * imag_estatica_missil_medio;                 // <---- fazer
-        // imagem estática da contagem de misseis grandes na tela         // <---- fazer
-        QGraphicsPixmapItem * imag_estatica_missil_grande;                // <---- fazer
+        //placar de misseis
+        Misseis_Placar placar_misseis;
         // display placar
         QGraphicsTextItem * placar_texto_obj;
         // display da vida

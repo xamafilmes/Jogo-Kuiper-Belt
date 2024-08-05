@@ -17,5 +17,7 @@
         <file>Tiro.png</file>
         <file>Vida.png</file>
         <file>VidaFaltando.png</file>
+        <file>Missil_Grande.png</file>
+        <file>Contagem.png</file>
     </qresource>
 </RCC>

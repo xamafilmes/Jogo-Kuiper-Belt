@@ -27,12 +27,9 @@ Próximos Passos:
 
 Agora:
 
-* Colocar a contagem dos misseis diferentes na tela /muito importante
+* Colocar uma tela inicial "Jogar" /importante
 
 Depois:
-
-
-* Colocar uma tela inicial "Jogar" /importante
 
 * Colocar uma tela de morte "Jogar novamente" /importante
 

@@ -105,7 +105,7 @@ void Asteroide::mover()
                 // dn = 2 + 2*( (int) tipo_asteroide)
 
                 int dn = 2 + 2*(int)(obter_tamanho_asteroide());
-                qDebug() << "Dano -"<< dn<<"?";
+                //qDebug() << "Dano -"<< dn<<"?";
                 ((Nave *)(itens_colididos[i]))->decrementar_vida(dn);
 
                 //asteroide explode, é retirado da cena e excluido
@@ -128,7 +128,7 @@ void Asteroide::mover()
     if(y() > scene()->height()+boundingRect().height()*4)
     {
         delete this;
-        qDebug() << "Asteroide Fora de tela destruido";
+        //qDebug() << "Asteroide Fora de tela destruido";
     }
 }
 

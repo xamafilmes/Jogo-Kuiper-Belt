@@ -18,8 +18,11 @@ public:
     void incrementar_vida(int vida_adicional);
     int ver_vida_nave();
     void adicionar_itens(Itens item_ad);
+    Itens * itens_da_nave();
 signals:
    void vida_nave_mudou();
+    void atirou_missil_grande();
+    void atirou_missil_medio();
 
 private:
     int vida_nave;

@@ -38,12 +38,12 @@ public slots:
     void mover();
 private:
     tipo_missil missil_t;
-//<<<<<<< HEAD
+
     //QMediaPlayer * som_missil; //retirado devido a necessidade
-//=======
+
  //   QMediaPlayer * som_missil;
     QTimer temporizador;
-//>>>>>>> da9a82ba1ffadf15c5ccbbd8749be7fe11ea1d6e
+
 };
 
 #endif // MÍSSIL_H

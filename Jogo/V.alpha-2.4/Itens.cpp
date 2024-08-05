@@ -1,5 +1,6 @@
 #include <Itens.h>
 
+#include <QDebug>
 
 Itens::Itens(int semente_criacao_asteroide)
 {
@@ -38,6 +39,7 @@ int Itens::adicionar_item_a_nave(Itens asteroide_item)
 void Itens::decrementar_misseis(int tamanho_missil) //
 {
     this->missil_adicional[tamanho_missil] = this->missil_adicional[tamanho_missil] -1;
+    qDebug() << "retirado tamanho "<<tamanho_missil<<" quantidade: " <<this->missil_adicional[tamanho_missil];
 }
 
 bool Itens::ver_item_existe()

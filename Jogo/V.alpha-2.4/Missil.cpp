@@ -1,7 +1,6 @@
 #include "Missil.h"
 #include "Asteroide.h"
 
-// Missil::Missil()
 Missil::Missil(tipo_missil tipo) : missil_t(tipo)
 {
     //temporizador que vai de um número a zero e faz o que tiver que fazer
@@ -37,7 +36,7 @@ Missil::Missil(tipo_missil tipo) : missil_t(tipo)
         break;
     case missil_grande:
         // Desenha o Missil
-        setPixmap(QPixmap(":/icones/Missil.png"));
+        setPixmap(QPixmap(":/icones/Missil_Grande.png"));
         //som_missil->setMedia(QUrl("qrc:/sons/Missil_3.mp3"));   //retirado devido a necessidade
         //som_missil->play();   //retirado devido a necessidade
         break;
@@ -50,7 +49,7 @@ void Missil::mover()
     {
         scene()->removeItem(this);
         delete this;
-        qDebug() << "Míssil deletado";
+        //qDebug() << "Míssil deletado";
     }
     else
     {
@@ -79,13 +78,13 @@ void Missil::mover()
 
                 //diminuir a vida do asteroide
 
-                asteroide->diminuir_vida_asteroide((2+ (int)(this->missil_t)));
+                asteroide->diminuir_vida_asteroide((2+ 2*(int)(this->missil_t)));
 
                 if (asteroide->ver_vida_asteroide()<=0)
                 {
                     tipo_asteroide tipo_asteroide = (asteroide)->obter_tamanho_asteroide();
                     int pnt = 2 + 2*(int)tipo_asteroide;
-                    qDebug() << "plcar +"<< pnt<<"?";
+                    //qDebug() << "plcar +"<< pnt<<"?";
                     jogo->adicionar_placar(pnt);
 
                     // quando o asteroide medio ou grande é destruido uma mensagem é enviada para o 'Jogo' que então cria o item

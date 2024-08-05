@@ -1,5 +1,5 @@
-QT       += core gui #\
-           # multimedia
+QT       += core gui \
+            multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,14 +15,16 @@ SOURCES += \
     Jogar.cpp \
     Missil.cpp \
     Nave.cpp \
-    main.cpp
+    main.cpp \
+    misseis_placar.cpp
 
 HEADERS += \
     Asteroide.h \
     Itens.h \
     Jogar.h \
     Missil.h \
-    Nave.h
+    Nave.h \
+    misseis_placar.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
