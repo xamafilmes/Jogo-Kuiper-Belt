@@ -7,7 +7,7 @@ Alpha < Beta
 
 1.0 < 1.1       etc.
 
-Atual versão: V.alpha-2.3
+Atual versão: V.alpha-2.4
 
 
 1.0 -> 1.1 // principais mudanças : sons, vida diminue, asteroides desaparecem ao dar dano
