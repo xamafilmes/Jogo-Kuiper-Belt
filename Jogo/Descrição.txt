@@ -1,40 +1,38 @@
 O jogo foi feto baseado no QtCreator 5.12.12
 
 
-A vers„o atual do jogo È sempre a que tiver maior n˙mero
+A vers√£o atual do jogo √© sempre a que tiver maior n√∫mero
 
 Alpha < Beta 
 
 1.0 < 1.1       etc.
 
-Atual vers„o: V.alpha-2.4
+Atual vers√£o: V.alpha-2.4
 
 
-1.0 -> 1.1 // principais mudanÁas : sons, vida diminue, asteroides desaparecem ao dar dano
+1.0 -> 1.1 // principais mudan√ßas : sons, vida diminue, asteroides desaparecem ao dar dano
 
-1.1 -> 2.0 // colocada algumas imagens (n„o arrumado o fundo)
+1.1 -> 2.0 // colocada algumas imagens (n√£o arrumado o fundo)
 
-2.0 -> 2.1 // colocada vidas diferentes para cada asteroide, inicio da classe de itens (vidas e misseis para nave), modularidade com definiÁoes de cabeÁalho
+2.0 -> 2.1 // colocada vidas diferentes para cada asteroide, inicio da classe de itens (vidas e misseis para nave), modularidade com defini√ßoes de cabe√ßalho
 
-2.1 -> 2.2 // colocada vida adicional randomica ao destruir asteroides mÈdios e grandes, progredindo no display de itens 
+2.1 -> 2.2 // colocada vida adicional randomica ao destruir asteroides m√©dios e grandes, progredindo no display de itens 
 
-2.2 -> 2.3 // colocado texto dos itens adquiridos e vazamento de memÛria no asteroide e no missil devido ao timer corrigido
+2.2 -> 2.3 // colocado texto dos itens adquiridos e vazamento de mem√≥ria no asteroide e no missil devido ao timer corrigido
 
-2.3 -> 2.4 // ajustada a imagem de fundo, removido os sons, adicionada a funÁ„o de lanÁar missil medio e grande com teclas X e Z
+2.3 -> 2.4 // ajustada a imagem de fundo, removido os sons, adicionada a fun√ß√£o de lan√ßar missil medio e grande com teclas X e Z
 
 
-PrÛximos Passos:
+Pr√≥ximos Passos:
 
 Agora:
 
-* Colocar uma tela inicial "Jogar" /importante
+* Colocar uma tela inicial "Jogar" /importante (Leo)
 
 Depois:
 
-* Colocar uma tela de morte "Jogar novamente" /importante
+* Colocar uma tela de morte "Jogar novamente" /importante (Leo)
 
 * Trocar o teclado para o Mouse / importante
 
-* Arrumar as imagens / importante (n„o sei se tem que arrumar mais alguma imagem)
-
-* Colocar as imagens das vidas (coraÁıes) /n„o importante
+* Colocar as imagens das vidas (cora√ß√µes) /n√£o importante (Leo)
