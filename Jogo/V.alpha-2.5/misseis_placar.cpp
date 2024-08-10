@@ -51,7 +51,7 @@ void Misseis_Placar::retirar_missil_medio()
 {
 
     missil_medio--;
-    qDebug()<<"sim medio:" <<missil_medio;
+    //qDebug()<<"sim medio:" <<missil_medio;
     mostrar_texto();
 }
 
@@ -59,7 +59,7 @@ void Misseis_Placar::retirar_missil_grande()
 {
 
     missil_grande--;
-    qDebug()<<"sim grande?";
+    //qDebug()<<"sim grande?";
     mostrar_texto();
 }
 

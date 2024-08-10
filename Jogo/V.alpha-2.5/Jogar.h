@@ -4,6 +4,7 @@
 #include "Nave.h"
 #include "Asteroide.h"
 #include "misseis_placar.h"
+#include "space.h"
 
 #include <QApplication>
 #include <QGraphicsScene>
@@ -42,7 +43,7 @@ public slots:
         void missil_grande_placar_decrementar();
     private:
         // parte gráfica
-        QGraphicsScene *cena_de_jogo;
+        Space *cena_de_jogo;
         QGraphicsView *foco_de_jogo;
         // temporização dos asteroides
         QTimer * tempo_asteroide;
@@ -64,6 +65,7 @@ public slots:
         QTimer * tempo_texto_obg;
         //musica de fundo
         //QMediaPlayer *musica_de_fundo = new QMediaPlayer; //retirado devido a necessidade
+
 };
 
 #endif // JOGAR_H

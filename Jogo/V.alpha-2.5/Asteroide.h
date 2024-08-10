@@ -27,7 +27,7 @@ class Asteroide: public QObject, public QGraphicsPixmapItem
 {
     Q_OBJECT
 public:
-    Asteroide();
+    Asteroide(int modificacao = 0);
     void diminuir_vida_asteroide(int missil);
     int  ver_vida_asteroide();
     int  dar_dano_asteroide();

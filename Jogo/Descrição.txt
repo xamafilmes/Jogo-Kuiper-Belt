@@ -1,4 +1,4 @@
-O jogo foi feto baseado no QtCreator 5.12.12
+﻿O jogo foi feto baseado no QtCreator 5.12.12
 
 
 A versão atual do jogo é sempre a que tiver maior número
@@ -22,6 +22,8 @@ Atual versão: V.alpha-2.4
 
 2.3 -> 2.4 // ajustada a imagem de fundo, removido os sons, adicionada a função de lançar missil medio e grande com teclas X e Z
 
+2.4 -> 2.5 // trocado o teclado para o Mouse e definido um tempo para o tiro
+
 
 Próximos Passos:
 
@@ -33,6 +35,5 @@ Depois:
 
 * Colocar uma tela de morte "Jogar novamente" /importante (Leo)
 
-* Trocar o teclado para o Mouse / importante
 
-* Colocar as imagens das vidas (corações) /não importante (Leo)
+* Colocar as imagens das vidas (corações) /não importante (Leo/André)

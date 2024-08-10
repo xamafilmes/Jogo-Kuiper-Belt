@@ -16,7 +16,8 @@ SOURCES += \
     Missil.cpp \
     Nave.cpp \
     main.cpp \
-    misseis_placar.cpp
+    misseis_placar.cpp \
+    space.cpp
 
 HEADERS += \
     Asteroide.h \
@@ -24,7 +25,9 @@ HEADERS += \
     Jogar.h \
     Missil.h \
     Nave.h \
-    misseis_placar.h
+    config.h \
+    misseis_placar.h \
+    space.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

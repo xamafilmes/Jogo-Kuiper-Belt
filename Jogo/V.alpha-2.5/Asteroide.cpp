@@ -2,11 +2,14 @@
 
 #define TAMANHO_X_TELA 800
 
-Asteroide::Asteroide()
+Asteroide::Asteroide(int modificacao)
 {
     // colocar numa posição randomica
-    srand(clock()<<10);
-    int nr_randomico = (rand() % (TAMANHO_X_TELA - 120)) + 60 ; //deixa o asteroide dentro do tamanho da tela menos o tamanho do retângulo'(scene()->width())'
+    time_t seconds;
+    seconds = time(NULL);
+
+    srand((clock()<<10) + seconds%17);
+    int nr_randomico = (rand() + modificacao) % (TAMANHO_X_TELA - 120) + 60 ; //deixa o asteroide dentro do tamanho da tela menos o tamanho do retângulo'(scene()->width())'
 
     //guardando a semente de criação do asteroide
     semente_criacao_asteroide = nr_randomico;
@@ -18,19 +21,19 @@ Asteroide::Asteroide()
     switch (tamanho_asteroide)
     {
     case asteroide_normal:
-        vida_asteroide = 2;
+        vida_asteroide = 6;
         dano_asteroide = 2;
         setPixmap(QPixmap(":/icones/Meteoro1.png"));
         setTransformOriginPoint(boundingRect().width()/2,boundingRect().height()/2);
     break;
     case asteroide_medio:
-        vida_asteroide = 4;
+        vida_asteroide = 8;
         dano_asteroide = 4;
         setPixmap(QPixmap(":/icones/Meteoro2.png"));
         setTransformOriginPoint(boundingRect().width()/2,boundingRect().height()/2);
     break;
     case asteroide_grande:
-        vida_asteroide = 6;
+        vida_asteroide = 14;
         dano_asteroide = 6;
         setPixmap(QPixmap(":/icones/Meteoro3.png"));
         setTransformOriginPoint(boundingRect().width()/2,boundingRect().height()/2);

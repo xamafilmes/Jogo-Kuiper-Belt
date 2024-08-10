@@ -3,35 +3,15 @@
 #include <QFont>
 #include <QGraphicsTextItem>
 
-#define LARGURA_TELA_X 800               // Dimensões da tela
-#define ALTURA_TELA_Y 600                //
-
-#define FOCO_DA_TELA_X 0                 // Foco da tela
-#define FOCO_DA_TELA_Y 0                 //
-
-#define FONTE_TEXTO_VIDA   18            // Fontes:vida
-#define FONTE_TEXTO_PLACAR 18            // placar
-#define FONTE_TEXTO_ITEM   13            // item
-
-#define ESPACO_PLACAR_E_VIDA 5           // Numero em pixeis
-#define ESPACO_TEXTO_ITEM    200
-
-#define ESPACO_ITEM_VIDA_Y 0             // Começo do item de vida no eixo y
-#define ESPACO_ITEM_VIDA_E_MISSIL_Y 20   // espaço entre os texto de item da vida e de missil
-
-#define POSICAO_X_OFFSEET_NAVE 0         // Posição da Nave
-#define POSICAO_Y_OFFSET_NAVE 0          //
-
-
-#define POSICAO_X_DO_MISSIL 600
-#define POSICAO_Y_DO_MISSIL 100
+#include <QtWidgets>
+#include "config.h"
 
 
 Jogar::Jogar(): placar_misseis(POSICAO_X_DO_MISSIL,POSICAO_Y_DO_MISSIL)
 {
     // cria uma cena
 
-    cena_de_jogo = new QGraphicsScene;
+    cena_de_jogo = new Space;
 
     // adicionar um vizualização de cena
 
@@ -39,13 +19,7 @@ Jogar::Jogar(): placar_misseis(POSICAO_X_DO_MISSIL,POSICAO_Y_DO_MISSIL)
     foco_de_jogo->setScene(cena_de_jogo); // como o foco (view) é uma janela (widget) tem que chamar a função membro 'show'
     foco_de_jogo->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff); // tira as merdas das barras inferiores
     foco_de_jogo->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff); // tira as merdas das barras laterais
-
     foco_de_jogo->setFixedSize(LARGURA_TELA_X,ALTURA_TELA_Y); // coloca o foco fixo em uma janela de 800,600
-    cena_de_jogo->setSceneRect(FOCO_DA_TELA_X,FOCO_DA_TELA_Y,LARGURA_TELA_X,ALTURA_TELA_Y); // seta a cena para comçar no 0,0 do foco e ter o mesmo tamanho que o foco
-
-    // colocar o background como sendo uma imagem
-    // precisa adicionar "QImage" header
-    cena_de_jogo->setBackgroundBrush(QBrush(QImage(":/icones/Fundo.png")));
 
     // pontuação = a 0
     pontos = 0;
@@ -120,7 +94,7 @@ Jogar::Jogar(): placar_misseis(POSICAO_X_DO_MISSIL,POSICAO_Y_DO_MISSIL)
     //Temporização dos asteroides
     tempo_asteroide = new QTimer;
     connect(tempo_asteroide , SIGNAL(timeout()),this,SLOT(add_asteroides()));
-    tempo_asteroide->start(2000);
+    tempo_asteroide->start((int)(TEMPO_ASTEROIDDE*1000));
 
     //colocar son de backgraund
     //musica_de_fundo->setMedia(QUrl("qrc:/sons/Musica_de_Fundo.mp3"));   //retirado devido a necessidade
@@ -143,6 +117,7 @@ bool Jogar::jogar()
     connect(nave,SIGNAL(vida_nave_mudou()),this,SLOT(imprimir_vida()));
     connect(nave,SIGNAL(atirou_missil_grande()), this,SLOT(missil_grande_placar_decrementar()));
     connect(nave,SIGNAL(atirou_missil_medio()),this,SLOT(missil_medio_placar_decrementar()));
+    connect(cena_de_jogo,SIGNAL(mouse_moveu(int)),nave,SLOT(posMouse(int)));
 
     // colocar o retângulo na cena
 
@@ -204,6 +179,7 @@ void Jogar::imprimir_vida()
 {
     int vida = nave->ver_vida_nave();
     vida_texto_obj->setPlainText("Vida: "+ QString::number(vida));
+    //qDebug()<<"Era para dar certo";
 }
 
 /*void Jogar::tocar_denovo()
@@ -223,7 +199,7 @@ void Jogar::criar_itens_para_nave(int semente_criacao_asteroide)
     nave->adicionar_itens(item_criado);
     // mostra o texto dos misseis e vidas
     texto_item_adquirido(item_criado);
-    qDebug()<<"Item missil médio:" << item_criado.ver_numero_misseis()[0]<< "\n missil grande "<<item_criado.ver_numero_misseis()[1] ;
+    //qDebug()<<"Item missil médio:" << item_criado.ver_numero_misseis()[0]<< "\n missil grande "<<item_criado.ver_numero_misseis()[1] ;
 }
 
 
@@ -256,3 +232,4 @@ void Jogar::add_asteroides()
     connect(asteroide,SIGNAL(criar_item_de_asteroide(int)),this,SLOT(criar_itens_para_nave(int)));
     //qDebug() << "Asteroide Vindo";
 }
+
