@@ -5,7 +5,6 @@
 
 #include "Missil.h"
 #include <math.h>
-#include <TelaFinal.h>
 
 #define POS_ADICIONAL_ESQUERDA_NAVE -10
 #define POS_ADICIONAL_DIREITA_NAVE 10
@@ -97,10 +96,13 @@ void Nave::decrementar_vida(int dano)
 {
     vida_nave = vida_nave - dano;
     if(vida_nave<=0){
-        Finalizar finalizar;
-        finalizar.show();
+       //sinal
+        emit nave_explodiu();
     }
-    emit vida_nave_mudou();
+    else
+    {
+        emit vida_nave_mudou();
+    }
 }
 
 void Nave::incrementar_vida(int vida_adicional)
@@ -134,7 +136,7 @@ void Nave::posMouse(int ponto)
     //int direcao;
     double posicao;
 
-    if(ponto < 0) //significa que veio da contagem de tempo
+    if(ponto == - 1) //significa que veio da contagem de tempo
     {
         if (tempo >= 5*CONSTANTE_DE_TEMPO_MOVIMENTO_NAVE)
         {
@@ -147,7 +149,7 @@ void Nave::posMouse(int ponto)
             //qDebug()<<"tempo add";  // <- a fazer
         }
     }
-    else
+    else if ((ponto > 0)&&(ponto < LARGURA_TELA_X))// aqui
     {
         cursor = ponto - 50.0;
         tempo = 0.0;

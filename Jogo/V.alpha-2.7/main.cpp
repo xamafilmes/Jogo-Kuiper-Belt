@@ -1,10 +1,11 @@
 #include <QApplication>
 #include <QGraphicsScene>
 #include <QGraphicsView>
+#include <QDebug>
 
 #include <TelaInicio.h>
 #include <Jogar.h>
-
+#include <TelaFinal.h>
 
 
 int main(int argc, char *argv[])
@@ -13,6 +14,7 @@ int main(int argc, char *argv[])
 
     Iniciar iniciar;
     iniciar.show();
+
 
     return app.exec();
 }

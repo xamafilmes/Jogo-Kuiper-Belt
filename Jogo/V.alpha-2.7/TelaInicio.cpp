@@ -27,6 +27,9 @@ Iniciar::Iniciar(QWidget *parent)
     layout->addWidget(startButton);
 
     setLayout(layout);
+
+    //
+
 }
 
 Iniciar::~Iniciar()
@@ -42,5 +45,7 @@ void Iniciar::onStartButtonClicked()
     // Cria e mostra a tela do jogo
     jogo = new Jogar();
     jogo->jogar();
+
+
 }
 

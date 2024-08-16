@@ -12,6 +12,7 @@
 #include <QObject>
 #include <QDebug>
 #include <QGraphicsScene>
+#include <TelaFinal.h>
 
 //#include <QMediaPlayer> //retirado devido a necessidade
 
@@ -41,6 +42,8 @@ public slots:
         void missil_medio_placar_decrementar();
         // missil grande
         void missil_grande_placar_decrementar();
+        // slot vida acabou
+        void finaliza_jogo();
     private:
         // parte gráfica
         Space *cena_de_jogo;
@@ -63,6 +66,8 @@ public slots:
         QGraphicsTextItem * itens_texto_missil_obj;
         // temporizador para tirar o texto da tela
         QTimer * tempo_texto_obg;
+        // tela final
+        Finalizar finalizar;
         //musica de fundo
         //QMediaPlayer *musica_de_fundo = new QMediaPlayer; //retirado devido a necessidade
 

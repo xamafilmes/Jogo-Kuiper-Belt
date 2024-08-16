@@ -118,6 +118,7 @@ bool Jogar::jogar()
     connect(nave,SIGNAL(atirou_missil_grande()), this,SLOT(missil_grande_placar_decrementar()));
     connect(nave,SIGNAL(atirou_missil_medio()),this,SLOT(missil_medio_placar_decrementar()));
     connect(cena_de_jogo,SIGNAL(mouse_moveu(int)),nave,SLOT(posMouse(int)));
+    connect(nave,SIGNAL(nave_explodiu()),this,SLOT(finaliza_jogo()));
 
     // colocar o retângulo na cena
 
@@ -223,6 +224,40 @@ void Jogar::missil_grande_placar_decrementar()
     qDebug()<<"retirou grande?";
     // decrementa o item do placar
     placar_misseis.retirar_missil_grande();
+}
+
+void Jogar::finaliza_jogo()
+{
+    tempo_texto_obg->deleteLater();
+    tempo_asteroide->deleteLater();
+
+    foco_de_jogo->close();
+
+    //cena_de_jogo->blockSignals();
+    //cena_de_jogo->clear();
+
+    if (cena_de_jogo->isActive())
+    {
+        qDebug()<<"deu merda";
+    }
+
+
+//    delete nave->deleteLater();
+//    delete placar_texto_obj->deleteLater();
+//    delete vida_texto_obj->deleteLater();
+//    delete itens_texto_vida_obj->deleteLater();
+//    delete itens_texto_missil_obj->deleteLater();
+
+    nave->deleteLater();
+    placar_texto_obj->deleteLater();
+    vida_texto_obj->deleteLater();
+    itens_texto_vida_obj->deleteLater();
+    itens_texto_missil_obj->deleteLater();
+
+//    delete foco_de_jogo;
+//    delete cena_de_jogo;
+    qDebug()<<"Finalizou";
+    finalizar.show();
 }
 
 void Jogar::add_asteroides()

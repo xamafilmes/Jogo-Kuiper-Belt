@@ -26,6 +26,7 @@ signals:
     void atirou_missil_grande();
     void atirou_missil_medio();
     void envia_tempo(int);
+    void nave_explodiu();
 
 public slots:
     void posMouse(int ponto);  // <- a fazer
@@ -35,7 +36,7 @@ public slots:
 private:
     int vida_nave;
     double tempo;
-    int cursor;
+    double cursor;
     bool flag_nave_pode_atirar = true;
     Itens numero_de_misseis;
     QTimer tempo_movimento;
