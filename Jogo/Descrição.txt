@@ -26,6 +26,8 @@ Atual versão: V.alpha-2.4
 
 2.5 -> 2.6 // adicionada as imagens de fundo para tela de inicio e fim e imagens de vida, adicionada tela inicial ao jogo
 
+2.6 -> 2.7 // tentei adicionar a tela final
+
 
 Próximos Passos:
 

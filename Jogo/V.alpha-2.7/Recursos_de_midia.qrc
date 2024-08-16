@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/sons">
+        <file>Asteroide_Explosao.wav</file>
+        <file>Musica_de_Fundo.mp3</file>
+        <file>Missil_1.mp3</file>
+        <file>Missil_2.mp3</file>
+        <file>Missil_3.mp3</file>
+    </qresource>
+    <qresource prefix="/icones">
+        <file>Fundo.png</file>
+        <file>Kuiper belt.png</file>
+        <file>Meteoro1.png</file>
+        <file>Meteoro2.png</file>
+        <file>Meteoro3.png</file>
+        <file>Missil.png</file>
+        <file>Nave.png</file>
+        <file>Tiro.png</file>
+        <file>Vida.png</file>
+        <file>VidaFaltando.png</file>
+        <file>Missil_Grande.png</file>
+        <file>Contagem.png</file>
+        <file>Contagem2.png</file>
+        <file>NaveDestruida.png</file>
+        <file>FundoInicio.png</file>
+        <file>1coracao.png</file>
+        <file>2coracao.png</file>
+        <file>3coracao.png</file>
+        <file>4coracao.png</file>
+        <file>5coracao.png</file>
+        <file>6coracao.png</file>
+        <file>TelaFinal.png</file>
+    </qresource>
+</RCC>

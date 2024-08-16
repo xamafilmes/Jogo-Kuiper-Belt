@@ -1,0 +1,17 @@
+debug/Asteroide.o
+debug/Itens.o
+debug/TelaInicio.o
+debug/Jogar.o
+debug/main.o
+debug/Missil.o
+debug/Nave.o
+debug/misseis_placar.o
+debug/space.o
+debug/qrc_Recursos_de_midia.o
+debug/moc_Asteroide.o
+debug/moc_TelaInicio.o
+debug/moc_Jogar.o
+debug/moc_Missil.o
+debug/moc_Nave.o
+debug/moc_misseis_placar.o
+debug/moc_space.o

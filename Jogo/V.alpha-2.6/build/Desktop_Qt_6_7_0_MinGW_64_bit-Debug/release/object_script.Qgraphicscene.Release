@@ -1,5 +1,6 @@
 release/Asteroide.o
 release/Itens.o
+release/TelaFinal.o
 release/TelaInicio.o
 release/Jogar.o
 release/main.o
@@ -9,6 +10,7 @@ release/misseis_placar.o
 release/space.o
 release/qrc_Recursos_de_midia.o
 release/moc_Asteroide.o
+release/moc_TelaFinal.o
 release/moc_TelaInicio.o
 release/moc_Jogar.o
 release/moc_Missil.o
